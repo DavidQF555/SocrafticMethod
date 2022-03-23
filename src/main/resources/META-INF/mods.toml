@@ -1,0 +1,24 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+license = "GPLv3"
+issueTrackerURL = "https://github.com/DavidQF555/Hypotheticals/issues"
+[[mods]]
+modId = "hypotheticals"
+version = "${file.jarVersion}"
+displayName = "Hypotheticals"
+displayURL = "https://github.com/DavidQF555/Hypotheticals"
+#logoFile = "logo.png"
+authors = "DavidQF555"
+description = 'This mod adds features from hypothetical situations.'
+[[dependencies.hypotheticals]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.hypotheticals]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.5,1.17)"
+ordering = "NONE"
+side = "BOTH"
