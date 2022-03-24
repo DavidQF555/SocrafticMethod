@@ -3,7 +3,8 @@ package io.github.davidqf555.minecraft.hypotheticals.common.registration;
 import io.github.davidqf555.minecraft.hypotheticals.common.Hypotheticals;
 import io.github.davidqf555.minecraft.hypotheticals.common.items.EffectItem;
 import net.minecraft.item.Item;
-import net.minecraft.potion.EffectInstance;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Rarity;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,7 +15,7 @@ public final class ItemRegistry {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Hypotheticals.MOD_ID);
 
-    public static final RegistryObject<EffectItem> GYGES_RING = register("gyges_ring", () -> new EffectItem(EffectRegistry.NO_CONSEQUENCES::get, 1, true, false, true, new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<EffectItem> GYGES_RING = register("gyges_ring", () -> new EffectItem(EffectRegistry.NO_CONSEQUENCES, 1, true, false, true, new Item.Properties().stacksTo(1).rarity(Rarity.RARE).tab(ItemGroup.TAB_TOOLS)));
 
     private ItemRegistry() {
     }
