@@ -17,7 +17,7 @@ public final class EventBusSubscriber {
 
     @SubscribeEvent
     public static <T extends LivingEntity, M extends EntityModel<T>> void preRenderLiving(RenderLivingEvent.Pre<T, M> event) {
-        if (event.getEntity().hasEffect(EffectRegistry.TRUE_INVISIBILITY.get())) {
+        if (event.getEntity().hasEffect(EffectRegistry.NO_CONSEQUENCES.get())) {
             event.setCanceled(true);
         }
     }

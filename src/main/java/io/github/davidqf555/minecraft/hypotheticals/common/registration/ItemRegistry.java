@@ -14,7 +14,7 @@ public final class ItemRegistry {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Hypotheticals.MOD_ID);
 
-    public static final RegistryObject<EffectItem> GYGES_RING = register("gyges_ring", () -> new EffectItem(new Item.Properties().stacksTo(1), () -> new EffectInstance(EffectRegistry.TRUE_INVISIBILITY.get(), 2, 0, true, false, true), () -> new EffectInstance(EffectRegistry.UNTARGETABLE.get(), 2, 0, true, false, true)));
+    public static final RegistryObject<EffectItem> GYGES_RING = register("gyges_ring", () -> new EffectItem(EffectRegistry.NO_CONSEQUENCES::get, 1, true, false, true, new Item.Properties().stacksTo(1)));
 
     private ItemRegistry() {
     }

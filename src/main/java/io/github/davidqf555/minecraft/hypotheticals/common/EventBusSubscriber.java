@@ -16,7 +16,7 @@ public final class EventBusSubscriber {
     @SubscribeEvent
     public static void onLivingSetAttackTarget(LivingSetAttackTargetEvent event) {
         LivingEntity target = event.getTarget();
-        if (target != null && target.hasEffect(EffectRegistry.UNTARGETABLE.get())) {
+        if (target != null && target.hasEffect(EffectRegistry.NO_CONSEQUENCES.get())) {
             ((MobEntity) event.getEntity()).setTarget(null);
         }
     }
