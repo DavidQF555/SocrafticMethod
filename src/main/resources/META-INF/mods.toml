@@ -7,7 +7,7 @@ modId = "hypotheticals"
 version = "${file.jarVersion}"
 displayName = "Hypotheticals"
 displayURL = "https://github.com/DavidQF555/Hypotheticals"
-#logoFile = "logo.png"
+logoFile = "logo.png"
 authors = "DavidQF555"
 description = 'This mod adds features from hypothetical situations.'
 [[dependencies.hypotheticals]]
