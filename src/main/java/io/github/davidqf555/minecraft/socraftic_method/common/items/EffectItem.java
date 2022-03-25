@@ -1,22 +1,22 @@
 package io.github.davidqf555.minecraft.socraftic_method.common.items;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.potion.Effect;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.world.World;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 
 import java.util.function.Supplier;
 
 public class EffectItem extends Item {
 
-    private final Supplier<Effect> effect;
+    private final Supplier<MobEffect> effect;
     private final int amplifier;
     private final boolean ambient, visible, showIcon;
 
-    public EffectItem(Supplier<Effect> effect, int amplifier, boolean ambient, boolean visible, boolean showIcon, Properties properties) {
+    public EffectItem(Supplier<MobEffect> effect, int amplifier, boolean ambient, boolean visible, boolean showIcon, Properties properties) {
         super(properties);
         this.effect = effect;
         this.amplifier = amplifier;
@@ -26,13 +26,13 @@ public class EffectItem extends Item {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+    public void inventoryTick(ItemStack stack, Level world, Entity entity, int slot, boolean selected) {
         if (entity instanceof LivingEntity && (selected || ((LivingEntity) entity).getOffhandItem().equals(stack))) {
             ((LivingEntity) entity).addEffect(createEffectInstance());
         }
     }
 
-    protected EffectInstance createEffectInstance() {
-        return new EffectInstance(effect.get(), 2, amplifier - 1, ambient, visible, showIcon);
+    protected MobEffectInstance createEffectInstance() {
+        return new MobEffectInstance(effect.get(), 2, amplifier - 1, ambient, visible, showIcon);
     }
 }

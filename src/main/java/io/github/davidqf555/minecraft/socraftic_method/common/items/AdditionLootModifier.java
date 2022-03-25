@@ -1,10 +1,10 @@
 package io.github.davidqf555.minecraft.socraftic_method.common.items;
 
 import com.google.gson.JsonObject;
-import net.minecraft.item.ItemStack;
-import net.minecraft.loot.LootContext;
-import net.minecraft.loot.conditions.ILootCondition;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 
@@ -16,7 +16,7 @@ public class AdditionLootModifier extends LootModifier {
 
     private final List<Supplier<ItemStack>> additions;
 
-    protected AdditionLootModifier(List<Supplier<ItemStack>> additions, ILootCondition[] conditionsIn) {
+    protected AdditionLootModifier(List<Supplier<ItemStack>> additions, LootItemCondition[] conditionsIn) {
         super(conditionsIn);
         this.additions = additions;
     }
@@ -39,7 +39,7 @@ public class AdditionLootModifier extends LootModifier {
         }
 
         @Override
-        public AdditionLootModifier read(ResourceLocation location, JsonObject object, ILootCondition[] conditions) {
+        public AdditionLootModifier read(ResourceLocation location, JsonObject object, LootItemCondition[] conditions) {
             return new AdditionLootModifier(additions, conditions);
         }
 

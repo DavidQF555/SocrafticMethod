@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[36,)"
+loaderVersion = "[40,)"
 license = "GPLv3"
 issueTrackerURL = "https://github.com/DavidQF555/SocrafticMethod/issues"
 [[mods]]
@@ -13,12 +13,12 @@ description = 'This mod adds philosophical features.'
 [[dependencies.socraftic_method]]
 modId = "forge"
 mandatory = true
-versionRange = "[36,)"
+versionRange = "[40,)"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies.socraftic_method]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.16.5,1.17)"
+versionRange = "[1.18.2,1.19)"
 ordering = "NONE"
 side = "BOTH"
