@@ -1,13 +1,13 @@
-package io.github.davidqf555.minecraft.hypotheticals.common;
+package io.github.davidqf555.minecraft.socraftic_method.common;
 
-import io.github.davidqf555.minecraft.hypotheticals.common.registration.EffectRegistry;
+import io.github.davidqf555.minecraft.socraftic_method.common.registration.EffectRegistry;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = Hypotheticals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+@Mod.EventBusSubscriber(modid = SocrafticMethod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class EventBusSubscriber {
 
     private EventBusSubscriber() {

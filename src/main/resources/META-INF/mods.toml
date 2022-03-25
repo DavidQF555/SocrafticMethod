@@ -1,22 +1,22 @@
 modLoader = "javafml"
 loaderVersion = "[36,)"
 license = "GPLv3"
-issueTrackerURL = "https://github.com/DavidQF555/Hypotheticals/issues"
+issueTrackerURL = "https://github.com/DavidQF555/SocrafticMethod/issues"
 [[mods]]
-modId = "hypotheticals"
+modId = "socraftic_method"
 version = "${file.jarVersion}"
-displayName = "Hypotheticals"
-displayURL = "https://github.com/DavidQF555/Hypotheticals"
+displayName = "Socraftic Method"
+displayURL = "https://github.com/DavidQF555/SocrafticMethod"
 logoFile = "logo.png"
 authors = "DavidQF555"
-description = 'This mod adds features from hypothetical situations.'
-[[dependencies.hypotheticals]]
+description = 'This mod adds philosophical features.'
+[[dependencies.socraftic_method]]
 modId = "forge"
 mandatory = true
 versionRange = "[36,)"
 ordering = "NONE"
 side = "BOTH"
-[[dependencies.hypotheticals]]
+[[dependencies.socraftic_method]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.16.5,1.17)"

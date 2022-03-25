@@ -1,4 +1,4 @@
-package io.github.davidqf555.minecraft.hypotheticals.common.items;
+package io.github.davidqf555.minecraft.socraftic_method.common.items;
 
 import com.google.gson.JsonObject;
 import net.minecraft.item.ItemStack;

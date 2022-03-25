@@ -1,4 +1,4 @@
-package io.github.davidqf555.minecraft.hypotheticals.common.effects;
+package io.github.davidqf555.minecraft.socraftic_method.common.effects;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.Effect;

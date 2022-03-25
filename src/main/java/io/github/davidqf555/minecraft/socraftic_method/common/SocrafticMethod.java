@@ -1,19 +1,19 @@
-package io.github.davidqf555.minecraft.hypotheticals.common;
+package io.github.davidqf555.minecraft.socraftic_method.common;
 
-import io.github.davidqf555.minecraft.hypotheticals.common.registration.EffectRegistry;
-import io.github.davidqf555.minecraft.hypotheticals.common.registration.ItemRegistry;
-import io.github.davidqf555.minecraft.hypotheticals.common.registration.LootModifierRegistry;
+import io.github.davidqf555.minecraft.socraftic_method.common.registration.EffectRegistry;
+import io.github.davidqf555.minecraft.socraftic_method.common.registration.ItemRegistry;
+import io.github.davidqf555.minecraft.socraftic_method.common.registration.LootModifierRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod("hypotheticals")
-public class Hypotheticals {
+@Mod("socraftic_method")
+public class SocrafticMethod {
 
-    public static final String MOD_ID = "hypotheticals";
+    public static final String MOD_ID = "socraftic_method";
 
-    public Hypotheticals() {
+    public SocrafticMethod() {
         addRegistries(FMLJavaModLoadingContext.get().getModEventBus());
         MinecraftForge.EVENT_BUS.register(this);
     }

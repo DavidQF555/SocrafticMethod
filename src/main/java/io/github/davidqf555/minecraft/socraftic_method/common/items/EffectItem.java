@@ -1,4 +1,4 @@
-package io.github.davidqf555.minecraft.hypotheticals.common.items;
+package io.github.davidqf555.minecraft.socraftic_method.common.items;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;

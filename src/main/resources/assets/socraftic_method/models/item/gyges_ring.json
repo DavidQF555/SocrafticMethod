@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "hypotheticals:item/gyges_ring"
+    "layer0": "socraftic_method:item/gyges_ring"
   }
 }

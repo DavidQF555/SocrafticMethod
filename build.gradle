@@ -16,8 +16,8 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '1.16.5-1.0.0'
-group = 'io.github.davidqf555.minecraft.hypotheticals'
-archivesBaseName = 'hypotheticals'
+group = 'io.github.davidqf555.minecraft.socraftic_method'
+archivesBaseName = 'socraftic_method'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
@@ -33,7 +33,7 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             mods {
-                hypotheticals {
+                socraftic_method {
                     source sourceSets.main
                 }
             }
@@ -44,7 +44,7 @@ minecraft {
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
             mods {
-                hypotheticals {
+                socraftic_method {
                     source sourceSets.main
                 }
             }
@@ -55,9 +55,9 @@ minecraft {
             workingDirectory project.file('run')
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            args '--mod', 'hypotheticals', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'socraftic_method', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
             mods {
-                hypotheticals {
+                socraftic_method {
                     source sourceSets.main
                 }
             }
@@ -74,7 +74,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "Hypotheticals",
+                "Specification-Title"     : "Socraftic Method",
                 "Specification-Vendor"    : "DavidQF555",
                 "Specification-Version"   : "1",
                 "Implementation-Title"    : project.name,
